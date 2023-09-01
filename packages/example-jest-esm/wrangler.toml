@@ -1,0 +1,13 @@
+name = "example-jest-esm"
+main = "src/index.mjs"
+compatibility_date = "2023-04-02"
+compatibility_flags = [ "nodejs_compat" ]
+account_id = "ACCOUNT_ID"
+# modules = true
+kv_namespaces = [{ binding = "LD_KV", id = "KV_ID", preview_id = "YOUR_PREVIEW_KV_ID" }]
+
+[vars]
+LD_CLIENT_SIDE_ID = 'LD_CLIENT_SIDE_ID'
+
+[miniflare]
+kv_persist = true
